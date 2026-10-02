@@ -1,0 +1,35 @@
+<h1>bhaskara</h1>
+
+ <input type = "text" id = "aValue"/> x²
+ <input type = "text" id = "bValue"/> x
+ <input type  = "text" id="cValue"> = 
+
+ <br>
+ <input type = "button" onclick = "calcular()" value = "calcular"/>
+ 
+ <script>
+    function calcular(){
+       
+        let a =  document.getElementById("aValue").value;
+        let b = document.getElementById("bValue").value;
+        let c = document.getElementById("cValue").value;
+        let delta = (b*b) - 4*a*c;
+        
+ let resultado = (b*-1 , delta ** 0.5)/(2*a)
+
+alert('calculando...');
+
+if (delta < 0){
+            alert('Não existem raízes reais (resultado = numero negativo)');
+        } else if (delta == 0){
+            alert('Existe apenas uma raiz real (valor de delta = 0)');
+        } else {
+            alert('O valor de delta é: ' + resultado.toFixed(5));
+
+      
+
+        
+    }}
+    </script>
+
+
