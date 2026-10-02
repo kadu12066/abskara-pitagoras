@@ -5,8 +5,8 @@
 </head>
 
 <body>
- <input type = "text" id = "aValue"/> Ca
- <input type = "text" id = "bValue"/> Ca
+ <input type = "text" id = "aValue"/> CaA
+ <input type = "text" id = "bValue"/> CaB
  <input type  = "text" id="cValue"> Hi
 
 
@@ -19,8 +19,20 @@
         let catA =  document.getElementById("aValue").value;
         let catB = document.getElementById("bValue").value;
         let hipo = document.getElementById("cValue").value;
-       resultado = 
+       if (hipo == ""){
+       resultado = (catA**2 + catB**2)**0.5;
+       }
+
+       else if (catA == ""){
+       resultado = (hipo**2 - catB**2)**0.5;}
+
+       else if (catB == ""){
+         resultado = (hipo**2 - catA**2)**0.5;}
+
+         alert('calculando...');
+         alert('O valor do resultado é: ' + resultado.toFixed(5));
     }
+
 </script>   
    </body>
 
